@@ -1,0 +1,26 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "96c6ac519b60cd27b2465ec80c36c182"
+name = "LS same day delivery"
+handle = "ls-same-day-delivery"
+application_url = "https://www.lanternsol.com/"
+embedded = true
+
+[build]
+dev_store_url = "for-ls-app-testing.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_delivery_customizations,write_delivery_customizations"
+
+[auth]
+redirect_urls = [
+  "https://dev-lanternsol.github.io/LanternSol-Liquid-Snippets/"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+[pos]
+embedded = false
